@@ -153,7 +153,7 @@ class NativeEngine extends Engine {
       'setoption name DeveloperMode value ${EnvironmentConfig.devMode}',
     );
     await send(
-      'setoption name Algorithm value ${_pref.algorithm}',
+      'setoption name Algorithm value ${_pref.algorithm!.index}',
     );
     await send(
       'setoption name DrawOnHumanExperience value ${_pref.drawOnHumanExperience}',
